@@ -25,6 +25,7 @@ $ pip install feedparser
 
 
 詳細: [Python, feedparserでRSS, Atomフィードを解析](https://note.nkmk.me/python-feedparser-tutorial/)
+
 開発: [Github/feedparser](https://github.com/kurtmckee/feedparser)
 
 
