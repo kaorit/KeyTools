@@ -1,6 +1,6 @@
 # feed2keys.py について
 
-Misskey, Calckey で RSS を購読するためのツールです。
+Misskey, Calckey で RSS を購読するためのツールです。
 
 動作確認は以下にて行なっています。
 
