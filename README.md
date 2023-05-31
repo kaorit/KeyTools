@@ -1,6 +1,6 @@
 # feed2keys.py について
 
-Misskey, Calckey で RSS を購読するためのツールです。
+Misskey, Calckey で RSS を購読するためのツールです。
 
 動作確認は以下にて行なっています。
 
@@ -11,10 +11,12 @@ Misskey, Calckey で RSS を購読するためのツールです。
 * Misskey.py 4.1.0
 
 
+
 ## 事前準備
 ### Feedparser をインストールする
 
 Feedparser は RSS / Atomフィードを解析（パース）してサイトの新着記事などの情報を抽出してくれるサードパーティライブラリです。これがないと始まらないのでインストールします。
+
 
  ```
 $ pip install feedparser
@@ -61,6 +63,15 @@ $ python3 feed2keys.py
 変更を加えてから再度動かして確認してみてください。
 
 
+#### 変更が必要な場合
+
+以下の記載を削除してください。
+```
+   {summaries} //19行目は行削除
+ summaries=e['summary'], //22行目
+```
+
+
 
 ### 設定
 
@@ -88,15 +99,6 @@ print(string)
 
 これでファイルへの設定は終了です。
 
-
-
-#### 変更が必要な場合
-
-以下の記載を削除してください。
-```
-   {summaries} //19行目は行削除
- summaries=e['summary'], //22行目
-```
 
 
 
